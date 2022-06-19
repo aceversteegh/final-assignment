@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Homepage - The Clueless Cook</title>
+</head>
+
+<body>
+
+<!-- Header Section -->
+
+<header class="section header">
+    <div class="container header__inner">
+        <a href="#" class="header__logo">The Clueless Cook</a>
+        <nav class="header__navbar">
+            <ul class="header__navbar-list">
+                <li class="header__navbar-item"><a class="header__navbar-link" href="">Home</a></li>
+                <li class="header__navbar-item"><a class="header__navbar-link" href="">About</a></li>
+                <li class="header__navbar-item"><a class="header__navbar-link" href="">Calculator</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<!-- Main Section -->
+
+<main>
+
+    <section class="section hero">
+        <img class="hero__image" alt="background-image" src="/assets/images/hero-image.jpg">
+        <div class="container hero__inner">
+            <h1 class="hero__title">Delicious Recipes.</h1>
+            <h2 class="hero__subtitle">Daily Updated.</h2>
+
+            <div class="hero__button">
+                <button class="search-button">Find Recipes →</button>
+            </div>
+
+
+            <div class="recipe-cards">
+
+                <a href="#" class="recipe-card recipe-card--low">
+                    <div class="recipe-card__img-wrapper">
+                        <img class="recipe-card__img" src="http://source.unsplash.com/random/?donuts" alt="food">
+                    </div>
+                    <div class="recipe-card__content">
+                        <h3 class="recipe-card__title">Donuts</h3>
+
+                        <div class="recipe-card__info">
+                            <p><span class="weight-500">250</span> Calories <span class="separator">|</span><span class="weight-500">4</span> Ingredients</p>
+                            <p class="recipe-card__preptime">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 23C5.92487 23 1 18.0751 1 12C1 5.92487 5.92487 1 12 1C18.0751 1 23 5.92487 23 12C23 18.0751 18.0751 23 12 23ZM12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21ZM17 11H13V6H11V13H17V11Z" fill="#283E53"/>
+                                </svg>
+                                <span class="weight-500">40</span>min.
+                            </p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#" class="recipe-card recipe-card--low recipe-card--lg">
+                    <div class="recipe-card__img-wrapper">
+                        <img class="recipe-card__img" src="http://source.unsplash.com/random/?shakshuka" alt="food">
+                    </div>
+                    <div class="recipe-card__content">
+                        <h3 class="recipe-card__title">Shakshuka</h3>
+
+                        <div class="recipe-card__info">
+                            <p><span class="weight-500">470</span> Calories <span class="separator">|</span><span class="weight-500">7</span> Ingredients</p>
+                            <p class="recipe-card__preptime">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 23C5.92487 23 1 18.0751 1 12C1 5.92487 5.92487 1 12 1C18.0751 1 23 5.92487 23 12C23 18.0751 18.0751 23 12 23ZM12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21ZM17 11H13V6H11V13H17V11Z" fill="#283E53"/>
+                                </svg>
+                                <span class="weight-500">30</span> min.
+                            </p>
+                        </div>
+
+                    </div>
+                </a>
+
+                <a href="#" class="recipe-card recipe-card--low">
+                    <div class="recipe-card__img-wrapper">
+                        <img class="recipe-card__img" src="http://source.unsplash.com/random/?curry" alt="food">
+                    </div>
+                    <div class="recipe-card__content">
+                        <h3 class="recipe-card__title">Curry</h3>
+
+                        <div class="recipe-card__info">
+                            <p><span class="weight-500">510</span> Calories <span class="separator">|</span><span class="weight-500">10</span> Ingredients</p>
+                            <p class="recipe-card__preptime">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 23C5.92487 23 1 18.0751 1 12C1 5.92487 5.92487 1 12 1C18.0751 1 23 5.92487 23 12C23 18.0751 18.0751 23 12 23ZM12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21ZM17 11H13V6H11V13H17V11Z" fill="#283E53"/>
+                                </svg>
+                                <span class="weight-500">55</span> min.
+                            </p>
+                        </div>
+
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+            <!-- Search Bar -->
+    <section class="section searchbar">
+        <div class="container">
+
+            <form class="searchbar__form">
+                <label for="search-field">
+                    <input type="search" name="search-field" id="search-field" placeholder="Recipe Search"/>
+                </label>
+
+                <label for="meal-type">
+                    <select class="form-field" name="meal-type" id="meal-type">
+                        <option disabled selected>Meal type</option>
+                        <option value="starter">starter</option>
+                        <option value="main">main</option>
+                        <option value="dessert">dessert</option>
+                        <option value="side">side</option>
+                        <option value="snacks">snacks</option>
+                    </select>
+                </label>
+
+                <label for="cuisine">
+                    <select class="form-field" name="cuisine" id="cuisine">
+                        <option disabled selected>cuisine</option>
+                        <option>french</option>
+                        <option>italian</option>
+                        <option>dutch</option>
+                        <option>japanese</option>
+                        <option>spanish</option>
+                    </select>
+                </label>
+
+                <label for="diet">
+                    <select class="form-field" name="diet" id="diet">
+                        <option disabled selected>diet</option>
+                        <option value="vegetarian">vegetarian</option>
+                        <option value="vegan">vegan</option>
+                        <option value="gluten-free">gluten-free</option>
+                        <option value="lactose-free">lactose-free</option>
+                        <option value="low-fat">low-fat</option>
+                        <option value="low-sodium">low-sodium</option>
+                    </select>
+                </label>
+
+                <label for="time">
+                    <select class="form-field" name="time" id="time">
+                        <option disabled selected>time</option>
+                        <option>20 min</option>
+                        <option>30 min</option>
+                        <option>50 min</option>
+                        <option>60 min</option>
+                        <option>90 min</option>
+                    </select>
+                </label>
+
+                <button class="search-button">Search →</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Start Recipe Cards -->
+
+    <section class="section recipe-overview">
+
+        <div class="container">
+            <div class="recipe-cards">
+
+                <a href="#" class="recipe-card">
+                    <div class="recipe-card__img-wrapper">
+                        <img class="recipe-card__img" src="http://source.unsplash.com/random/?burger" alt="food">
+                    </div>
+                    <div class="recipe-card__content">
+                        <h3 class="recipe-card__title">Burger</h3>
+
+                        <div class="recipe-card__info">
+                            <p><span class="weight-500">625</span> Calories <span class="separator">|</span><span class="weight-500">5</span> Ingredients</p>
+                            <p class="recipe-card__preptime">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 23C5.92487 23 1 18.0751 1 12C1 5.92487 5.92487 1 12 1C18.0751 1 23 5.92487 23 12C23 18.0751 18.0751 23 12 23ZM12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21ZM17 11H13V6H11V13H17V11Z" fill="#283E53"/>
+                                </svg>
+                                <span class="weight-500">25</span> min.
+                            </p>
+                        </div>
+
+                    </div>
+                </a>
+
+                <a href="#" class="recipe-card">
+                    <div class="recipe-card__img-wrapper">
+                        <img class="recipe-card__img" src="http://source.unsplash.com/random/?cake" alt="food">
+                    </div>
+                    <div class="recipe-card__content">
+                        <h3 class="recipe-card__title">Cake</h3>
+
+                        <div class="recipe-card__info">
+                            <p><span class="weight-500">335</span> Calories <span class="separator">|</span><span class="weight-500">6</span> Ingredients</p>
+                            <p class="recipe-card__preptime">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 23C5.92487 23 1 18.0751 1 12C1 5.92487 5.92487 1 12 1C18.0751 1 23 5.92487 23 12C23 18.0751 18.0751 23 12 23ZM12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21ZM17 11H13V6H11V13H17V11Z" fill="#283E53"/>
+                                </svg>
+                                <span class="weight-500">60</span> min.
+                            </p>
+                        </div>
+
+                    </div>
+                </a>
+
+                <a href="#" class="recipe-card">
+                    <div class="recipe-card__img-wrapper">
+                        <img class="recipe-card__img" src="http://source.unsplash.com/random/?pizza" alt="food">
+                    </div>
+                    <div class="recipe-card__content">
+                        <h3 class="recipe-card__title">Pizza</h3>
+
+                        <div class="recipe-card__info">
+                            <p><span class="weight-500">510</span> Calories <span class="separator">|</span><span class="weight-500">5</span> Ingredients</p>
+                            <p class="recipe-card__preptime">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 23C5.92487 23 1 18.0751 1 12C1 5.92487 5.92487 1 12 1C18.0751 1 23 5.92487 23 12C23 18.0751 18.0751 23 12 23ZM12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21ZM17 11H13V6H11V13H17V11Z" fill="#283E53"/>
+                                </svg>
+                                <span class="weight-500">30</span> min.
+                            </p>
+                        </div>
+
+                    </div>
+                </a>
+
+                <a href="#" class="recipe-card">
+                    <div class="recipe-card__img-wrapper">
+                        <img class="recipe-card__img" src="http://source.unsplash.com/random/?pancakes" alt="food">
+                    </div>
+                    <div class="recipe-card__content">
+                        <h3 class="recipe-card__title">Pancakes</h3>
+
+                        <div class="recipe-card__info">
+                            <p><span class="weight-500">220</span> Calories <span class="separator">|</span><span class="weight-500">6</span> Ingredients</p>
+                            <p class="recipe-card__preptime">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 23C5.92487 23 1 18.0751 1 12C1 5.92487 5.92487 1 12 1C18.0751 1 23 5.92487 23 12C23 18.0751 18.0751 23 12 23ZM12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21ZM17 11H13V6H11V13H17V11Z" fill="#283E53"/>
+                                </svg>
+                                <span class="weight-500">20</span> min.
+                            </p>
+                        </div>
+
+                    </div>
+                </a>
+
+                <a href="#" class="recipe-card">
+                    <div class="recipe-card__img-wrapper">
+                        <img class="recipe-card__img" src="http://source.unsplash.com/random/?pasta" alt="food">
+                    </div>
+                    <div class="recipe-card__content">
+                        <h3 class="recipe-card__title">Pasta</h3>
+
+                        <div class="recipe-card__info">
+                            <p><span class="weight-500">435</span> Calories <span class="separator">|</span><span class="weight-500">9</span> Ingredients</p>
+                            <p class="recipe-card__preptime">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 23C5.92487 23 1 18.0751 1 12C1 5.92487 5.92487 1 12 1C18.0751 1 23 5.92487 23 12C23 18.0751 18.0751 23 12 23ZM12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21ZM17 11H13V6H11V13H17V11Z" fill="#283E53"/>
+                                </svg>
+                                <span class="weight-500">15</span> min.
+                            </p>
+                        </div>
+
+                    </div>
+                </a>
+
+                <a href="#" class="recipe-card">
+                    <div class="recipe-card__img-wrapper">
+                        <img class="recipe-card__img" src="http://source.unsplash.com/random/?salad" alt="food">
+                    </div>
+                    <div class="recipe-card__content">
+                        <h3 class="recipe-card__title">Salad</h3>
+
+                        <div class="recipe-card__info">
+                            <p><span class="weight-500">210</span> Calories <span class="separator">|</span><span class="weight-500">7</span> Ingredients</p>
+                            <p class="recipe-card__preptime">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 23C5.92487 23 1 18.0751 1 12C1 5.92487 5.92487 1 12 1C18.0751 1 23 5.92487 23 12C23 18.0751 18.0751 23 12 23ZM12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21ZM17 11H13V6H11V13H17V11Z" fill="#283E53"/>
+                                </svg>
+                                <span class="weight-500">20</span> min.
+                            </p>
+                        </div>
+
+                    </div>
+                </a>
+            </div>
+        </div>
+
+    </section>
+
+</main>
+
+<!-- Footer Section-->
+
+<footer class=" section footer">
+
+        <div class="container footer__inner">
+            <ul class="footer-list">
+                <li id="footer-information">
+                    <h4>information</h4>
+                    <p>nullam a enim</p>
+                    <p>quisque cursus</p>
+                    <p>cras egestas</p>
+                    <p>nunc vitae</p>
+                </li>
+                <li id="footer-about">
+                    <h4>about</h4>
+                    <p>quisque cursus</p>
+                    <p>cras egestas</p>
+                    <p>nunc vitae</p>
+                </li>
+                <li id="footer-contact">
+                    <h4>contact</h4>
+                    <p>cras egestas</p>
+                    <p>nunc vitae</p>
+                    <p>nullam a enim</p>
+                </li>
+
+                <li id="footer-socials">
+                    <h4>social</h4>
+                    <div class="footer__icons">
+                        <a href="#">
+                            <div class="footer__circle">
+                          <span class="footer__icon"><img src="assets/icons/facebook.png"
+                                                          alt="Facebook Icon"></span>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="footer__circle">
+                            <span class="footer__icon"><img src="assets/icons/instagram.png"
+                                                            alt="Instagram Icon"></span>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="footer__circle">
+                            <span class="footer__icon"><img src="assets/icons/linkedin.png"
+                                                            alt="LinkedIn Icon"></span>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="footer__circle">
+                            <span class="footer__icon"><img src="assets/icons/twitter.png"
+                                                            alt="Twitter Icon"></span>
+                            </div>
+                        </a>
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+</footer>
+
+
+
+</body>
+</html>

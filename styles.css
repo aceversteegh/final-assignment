@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@font-face {
+    font-family: "Austein";
+    src: url("/assets/fonts/Austein/Austein.woff2") format("woff2"),
+         url("/assets/fonts/Austein/Austein-Script.woff") format("woff");
+ }
+
+/*////////////////////////
+    Table of Contents
+    1. Global Styles
+    2. Typography
+    3. Layout
+        3.1 Reusables
+        3.2 Other
+    4. Areas
+        4.1 Header
+        4.2 Introduction
+        etc.
+    5. Media Queries
+////////////////////////*/
+
+/* ------------------------------- 1. Global Styles -------------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #EEEEEE;
+}
+
+/* ------------------------------- 2. Typography ----------------------------------- */
+
+p {
+    font-weight: normal;
+    font-size: 14px;
+}
+
+h1 {
+    color: #EEEEEE;
+    font-size: 50px;
+}
+
+h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #283E53;
+}
+
+/* ------------------------------- 3. Layout --------------------------------------- */
+
+/* --------------- 3.1 Reusables ----------------------- */
+
+.section {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    /*border: 1px solid red;*/
+}
+
+.container {
+    flex-basis: 1000px;
+
+    /*border: 1px solid blue;*/
+}
+
+.search-button {
+    font-family: 'Poppins', sans-serif;
+    background-color: #70B6BE;
+    color: #3E3E3E;
+    text-transform: capitalize;
+    text-decoration: none;
+    width: 120px;
+    height: 32px;
+    text-align: start;
+    padding-left: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    border-style: none;
+    border-radius: 2px;
+}
+
+.search-button:hover {
+    opacity: 1;
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: transform .5s ease-in-out, box-shadow .5s ease-in-out;
+}
+
+a:visited {
+    text-decoration: none;
+    color: #283E53;
+}
+
+.separator {
+    margin: 0 10px;
+}
+
+/* ------------------------------- 4. Areas ---------------------------------------- */
+
+/* --------------- 4.1 Header ------------------------- */
+
+.header {
+    height: 80px;
+    background-color: #EEEEEE;
+}
+
+.header__inner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+    font-family: 'Austein', sans-serif;
+    font-size: 32px;
+    color: #283E53;
+
+}
+
+.header__navbar {
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    color: #283E53;
+}
+
+.header__navbar-list {
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    color: #283E53;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 3em;
+}
+
+.header__navbar-item {
+    list-style-type: none;
+}
+
+.hero {
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.hero__image {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+}
+
+.hero__inner {
+    margin-top: 150px;
+    margin-bottom: 20px;
+}
+
+.hero__title {
+    font-size: 50px;
+}
+
+.hero__subtitle {
+    font-size: 50px;
+    font-weight: 200;
+    color: #EEEEEE;
+    margin-bottom: 20px;
+}
+
+.hero__button {
+    margin-bottom: 70px;
+}
+
+.recipe-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1em;
+    row-gap: 2em;
+    max-width: 100%;
+}
+
+.recipe-card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 4px;
+    box-shadow: 2px 3px 18px 2px rgba(69,69,69,0.56);
+    background-color: lightgray;
+
+    /*border: 1px solid pink;*/
+}
+
+.recipe-card--low .recipe-card__img-wrapper {
+    padding-bottom: 40%;
+}
+
+.recipe-card--lg {
+    transform: scale(1.15);
+    z-index: 1;
+}
+
+.recipe-card__img-wrapper {
+    width: 100%;
+    padding-bottom: 50%;
+    position: relative;
+}
+
+.recipe-card__img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.recipe-card__content {
+    padding: 15px 20px;
+}
+
+.recipe-card__title {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.recipe-card__info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.recipe-card__info p {
+    font-size: 10px;
+}
+
+.recipe-card__info span {
+    color: #283E53;
+    font-weight: 400;
+}
+
+.recipe-card__preptime {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.recipe-card__preptime svg {
+    width: 10px;
+    height: 10px;
+    margin-right: 10px;
+}
+
+/* --------------- 4.2 Main ------------------- */
+
+.searchbar {
+    background-color: #283E53;
+    padding: 20px 0;
+
+    /*border: 1px solid orange;*/
+}
+
+.searchbar__form {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+
+.form-field {
+    width: 150px;
+    height: 32px;
+    padding-left: 15px;
+    font-family: poppins, sans-serif;
+    text-transform: capitalize;
+    font-size: 12px;
+    border-radius: 4px;
+    border-style: none;
+}
+
+#search-field {
+    width: 200px;
+    height: 32px;
+}
+
+.recipe-overview {
+    padding: 35px 0;
+}
+
+
+/* --------------- 4.2 Footer ------------------- */
+
+.footer {
+    background-color: #283E53;
+    color: #70B6BE;
+    height: 180px;
+    padding: 30px;
+}
+
+.footer-list {
+    font-size: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    list-style-type: none;
+    text-transform: capitalize;
+}
+
+.footer-list li p {
+    color: #EEEEEE;
+    padding-top: 7px;
+    font-size: 10px;
+}
+
+.footer__icons {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.footer__circle {
+    background-color: #70B6BE;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.footer__icon {
+    display: flex;
+    flex-direction: column;
+    padding-top: 15%;
+    align-items: center;
+    object-fit: cover;
+}
+
+.footer__icon img {
+    height: 15px;
+}
+
+h4 {
+    padding-bottom: 10px;
+    font-weight: 600;
+}
+
+
+/* ------------------------------- 5. Media Queries -------------------------------- */
